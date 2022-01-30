@@ -1,3 +1,4 @@
 # HealthAPI
 
-[get] /health
+* dev-окружение
+* [get] /health
