@@ -9,4 +9,3 @@ pip install wheel uwsgi flask
 deactivate
 sudo git fetch
 sudo git pull
-sudo systemctl restart HealthAPIdev
