@@ -4,7 +4,7 @@ sudo apt install nginx
 sudo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
 pip3 install virtualenv
 sudo python3 -m virtualenv HealthAPIenv
-source HealthAPIEnv/bin/activate
+source HealthAPIenv/bin/activate
 sudo pip install wheel uwsgi flask
 deactivate
 sudo git fetch
