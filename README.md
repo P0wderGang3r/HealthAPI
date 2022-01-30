@@ -1,3 +1,3 @@
-* HealthAPI
+# HealthAPI
 
 [get] /health
