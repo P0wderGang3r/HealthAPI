@@ -1,0 +1,3 @@
+# HealthAPI
+
+[get] /health
