@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request, make_response
 from dotenv import load_dotenv
-from os import environ
+import os
 
 app = Flask(__name__)
 
