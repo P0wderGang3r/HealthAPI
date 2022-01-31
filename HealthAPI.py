@@ -16,7 +16,7 @@ def hello():
 @app.route("/health", methods=["GET"])
 def health():
     env = os.environ["APP_ENV"]
-    return make_responce(jsonify({'APP_ENV': str(env)}), 200)
+    return make_response(jsonify({'APP_ENV': str(env)}), 200)
 
 
 if __name__ == "__main__":
