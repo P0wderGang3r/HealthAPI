@@ -13,7 +13,7 @@ def hello():
     return make_response(hello_text, 200)
 
 
-@app.route("/health")
+@app.route("/health", methods=["GET"])
 def health():
     env = os.environ["APP_ENV"]
     return make_responce(jsonify({'APP_ENV': str(env)}), 200)
