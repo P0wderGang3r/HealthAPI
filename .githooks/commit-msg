@@ -13,7 +13,7 @@ message += "Несоответствие паттерну:\n"
 message += " [1-9][0-9]*#card-[0-9]+ \n"
 message += "========================="
 
-if not re.match(r"[1-9][0-9]*#card-[0-9]+\s.*", sys_arg.read()):
+if not re.match(r"[1-9][0-9]*#card-[0-9]+\s", sys_arg.read()):
     print(message)
     sys.exit(322)
 
