@@ -8,8 +8,10 @@ load_dotenv()
 
 @app.route("/")
 def hello():
+    env = os.environ["APP_ENV"]
     hello_text = "<h1 style = 'color:green'>Default route</h1>"
     hello_text += "[get] /health <br>"
+    hello_text += env
     return make_response(hello_text, 200)
 
 
