@@ -1,7 +1,10 @@
 from flask import Flask, jsonify, request, make_response
+from dotenv import load_dotenv
+from os import environ
 
 app = Flask(__name__)
 
+load_dotenv()
 
 @app.route("/")
 def hello():
@@ -12,7 +15,8 @@ def hello():
 
 @app.route("/health")
 def health():
-    return make_responce("Здоровье", 200)
+    env = os.environ["APP_ENV"]
+    return make_responce(jsonify({'APP_ENV': str(env)}), 200)
 
 
 if __name__ == "__main__":
