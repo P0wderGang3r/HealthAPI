@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+
+import re
+import sys
+
+sys_arg = open(sys.argv[1], "r")
+
+#Пример: 1#card-76939286
+
+message = "=========================\n"
+message += "Ошибка при вводе коммита.\n"
+message += "Несоответствие паттерну:\n"
+message += " [1-9][0-9]*#card-[0-9]+ \n"
+message += "========================="
+
+if not re.match(r"[1-9][0-9]*#card-[0-9]+\s.*", sys_arg.read()):
+    print(message)
+    sys.exit(322)
+
+sys.exit(0)

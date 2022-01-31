@@ -1,0 +1,5 @@
+#!/bin/bash
+
+toolbox enter
+black *.py
+exit
